@@ -14,7 +14,7 @@ All simulated data were simulated using the 'Simulate Data Code.R'. That is, we 
 Simulated data is provied here broken down by pair percentages. For example 'Data_90.rds' is the 1,000 iterations for the simulated data for pair percentages of 90. The same format is done for the Null data. The sensitivity data is only simulated for 90% pairs.
 
 
-## Code Book
+## Data Dictionary
 
 event_num: Event number 
 
