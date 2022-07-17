@@ -10,6 +10,10 @@ Per the Childrens Hospital Colordao, the data cannot be made publicly available 
 
 All simulated data were simulated using the 'Simulate Data Code.R'. That is, we simulated 1,000 datasets for six different pair percentages: 10%, 50%, 60%, 70%, 80% and 90%. Each simulated dataset simulated time to failure using the nested MPL fraitly Cox model for 600 patients. The model included cluster and sub-cluster random effects and three predictors: side of sub-cluster (left or right ear), a treatment assignment (Fascia or non-Fascia), and the interaction between the two. Sub-cluster side was assumed to be constant over time, while treatment could vary by each ear and recurrent event. 
 
+## Files
+Simulated data is provied here broken down by pair percentages. For example 'Data_90.rds' is the 1,000 iterations for the simulated data for pair percentages of 90. The same format is done for the Null data. The sensitivity data is only simulated for 90% pairs.
+
+
 ## Code Book
 
 event_num: Event number 
