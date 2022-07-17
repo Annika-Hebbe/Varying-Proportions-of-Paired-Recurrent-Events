@@ -104,11 +104,11 @@ fulldat <- sim_dat(600, #number of subjects
                    coveff = c(0.4,0.3,-.25), #beta coefficents 
                    cluster =0.3, #variances
                    subcluster= 0.15, 
-                   1 #iterations
+                   1000 #iterations
 )
 
 #Save data
-save(test, file="/Users/annikahebbe/Desktop/Thesis Submission/Data/test.rds")
+save(fulldat, file="Data.rds")
 
 
 #simulate null data
@@ -120,7 +120,7 @@ nulldat <- sim_dat(600, #number of subjects
                    1000 #iterations
 )
 
-save(nulldat, file="/Users/annikahebbe/Desktop/Thesis Submission/Data/Null/null_data.rds")
+save(nulldat, file="null_data.rds")
 
 
 # Checks
@@ -134,7 +134,7 @@ nosubclu <- sim_dat(600, #number of subjects
                     1000 #iterations
 )
 
-save(nosubclu, file="/Users/annikahebbe/Desktop/Thesis Submission/Data/Checks/nosubclu.rds")
+save(nosubclu, file="nosubclu.rds")
 
 
 
@@ -147,7 +147,7 @@ largesubclu <- sim_dat(600, #number of subjects
                        1000 #iterations
 )
 
-save(largesubclu, file="/Users/annikahebbe/Desktop/Thesis Submission/Data/Checks/largesubclu.rds")
+save(largesubclu, file="largesubclu.rds")
 
 #No var
 novar <- sim_dat(600, #number of subjects
@@ -158,6 +158,6 @@ novar <- sim_dat(600, #number of subjects
                  1000 #iterations
 )
 
-save(novar, file="/Users/annikahebbe/Desktop/Thesis Submission/Data/Checks/novar.rds")
+save(novar, file="novar.rds")
 
 
