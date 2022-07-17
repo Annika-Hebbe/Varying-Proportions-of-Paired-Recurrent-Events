@@ -1,10 +1,10 @@
 #Fit simulated data to models
 # read in data
-fulldat <- readRDS("/Users/annikahebbe/Desktop/Thesis Submission/Data/Combined/full_data.RData")
-nulldat <- readRDS("/Users/annikahebbe/Desktop/Thesis Submission/Data/Combined/null_data.RData")
-novar <- readRDS("/Users/annikahebbe/Desktop/Thesis Submission/Data/Combined/novar.RData")
-nosubclu <- readRDS("/Users/annikahebbe/Desktop/Thesis Submission/Data/Combined/nosubclu.RData")
-largesubclu <- readRDS("/Users/annikahebbe/Desktop/Thesis Submission/Data/Combined/largesubclu.RData")
+fulldat <- readRDS("full_data.RData")
+nulldat <- readRDS("null_data.RData")
+novar <- readRDS("novar.RData")
+nosubclu <- readRDS("nosubclu.RData")
+largesubclu <- readRDS("largesubclu.RData")
 
 #Logistic, PWP, GF
 simulate_3 <- function(dataset, FILENAME){
@@ -102,19 +102,19 @@ simulate_3 <- function(dataset, FILENAME){
 } 
 
 simulate_3(fulldat,
-           "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/GLM-PWP-GF/Full/Full_3")
+           "Full_3")
 
 simulate_3(nulldat,
-           "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/GLM-PWP-GF/Null/Null_3")
+           "Null_3")
 
 simulate_3(novar,
-           "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/GLM-PWP-GF/Checks/novar_3")
+           "novar_3")
 
 simulate_3(nosubclu,
-           "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/GLM-PWP-GF/Checks/nosubclu_3")
+           "nosubclu_3")
 
 simulate_3(largesubclu,
-           "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/GLM-PWP-GF/Checks/largesubclu_3")
+           "largesubclu_3")
 
 
 
@@ -167,19 +167,19 @@ simulate_mpl <- function(dataset, FILENAME){
 } 
 
 simulate_mpl(fulldat, 
-             "/Users/annikahebbe/Desktop/Thesis SubmissionModel Output/MPL/full/full_mpl")
+             "full_mpl")
 
 simulate_mpl(nulldat, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/MPL/Null/Null_mpl")
+             "Null_mpl")
 
 simulate_mpl(novar, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/MPL/Checks/novar_mpl")
+             "novar_mpl")
 
 simulate_mpl(nosubclu, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/MPL/Checks/nosubclu_mpl")
+             "nosubclu_mpl")
 
 simulate_mpl(largesubclu, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/MPL/Checks/largesubclu_mpl")
+             "largesubclu_mpl")
 
 
 # PPL
@@ -233,22 +233,22 @@ simulate_ppl <- function(dataset, FILENAME){
 } 
 
 simulate_ppl(fulldat, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/ppl/full/Full_ppl")
+             "Full_ppl")
  
 simulate_ppl(nulldat,
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/ppl/null/Null_ppl")
+             "Null_ppl")
 
 simulate_ppl(novar, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/ppl/Checks/novar_ppl")
+             "novar_ppl")
 
 simulate_ppl(nosubclu, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/ppl/Checks/nosubclu_ppl")
+             "nosubclu_ppl")
 
 simulate_ppl(largesubclu, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/ppl/Checks/largesubclu_ppl")
+             "largesubclu_ppl")
 
 # HKC
-source("/Users/annikahebbe/Desktop/Thesis Submission/Model Output/Code/CodeSNW.R")
+source("CodeSNW.R")
 simulate_hkc <- function(dataset, FILENAME){
   
   pbapply::pblapply(1:length(dataset), function(x){
@@ -305,18 +305,18 @@ simulate_hkc <- function(dataset, FILENAME){
 } 
 
 simulate_hkc(fulldat, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/HKC/Full/Full_HKC")
+             "Full_HKC")
 
 simulate_hkc(nulldat, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Model Output/HKC/Null/Null_HKC")
+             "Null_HKC")
 
 simulate_hkc(novar, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Data/Model Output/HKC/Checks/novar_HKC")
+             "novar_HKC")
 
 simulate_hkc(nosubclu, 
-            "/Users/annikahebbe/Desktop/Thesis Submission/Data/Model Output/HKC/Checks/nosubclu_HKC")
+            "nosubclu_HKC")
             
 simulate_hkc(largesubclu, 
-             "/Users/annikahebbe/Desktop/Thesis Submission/Data/Model Output/HKC/Checks/largesubclu_HKC")
+             "largesubclu_HKC")
 
 
