@@ -93,7 +93,7 @@ sim_dat <- function(n,perc.ear, coveff = c(0,0,0), cluster = 0, subcluster =0, i
       done <- done[c(14,21:27)]
       
       done$seed <- z
-      done$perc.ear <- x
+      done$perc.ear <- x*100
       done
     } )
   } )
