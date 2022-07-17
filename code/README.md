@@ -22,7 +22,7 @@ This R code take the large saved model output and summarized it by taking the me
 **Tables.R**  
 This R code takes the saved summariezed model output and produces the 14 plots found in the paper. This code does not include table 3 in the paper: the results from the CHCO dataset.
 
-**Plot.R**  
+**Plots.R**  
 This R code takes the saved summariezed model output and produces the 8 plots found in the paper.
 
 ## Softwear Requirments
