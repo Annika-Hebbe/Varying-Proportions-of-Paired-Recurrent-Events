@@ -30,7 +30,7 @@ ggplot(data=trt_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, c
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure1.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure1.pdf", width = 7.65, height = 5.56)
 
 ##### Plot 2: Ear #####
 ear <- full %>% select(perc.ear, Model, B2_bias, B2_var, B2_MSE, B2_type2)
@@ -50,7 +50,7 @@ ggplot(data=ear_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, c
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure2.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure2.pdf", width = 7.65, height = 5.56)
 
 
 
@@ -73,7 +73,7 @@ ggplot(data=int_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, c
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figue3.jpeg", width = 7.65, height = 5.56)
+ggsave("Figue3.pdf", width = 7.65, height = 5.56)
 
 
 
@@ -96,7 +96,7 @@ ggplot(data=re_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, co
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure4.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure4.pdf", width = 7.65, height = 5.56)
 
 
 
@@ -118,7 +118,7 @@ ggplot(data=trt_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, c
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure5.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure5.pdf", width = 7.65, height = 5.56)
 
 
 ##### Plot 6: Null Ear #####
@@ -139,7 +139,7 @@ ggplot(data=ear_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, c
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure6.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure6.pdf", width = 7.65, height = 5.56)
 
 
 
@@ -162,7 +162,7 @@ ggplot(data=int_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, c
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure7.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure7.pdf", width = 7.65, height = 5.56)
 
 
 
@@ -185,6 +185,6 @@ ggplot(data=re_long, aes(x=perc.ear, y=value))+ geom_line(aes(linetype=Model, co
         plot.caption = element_text(hjust = 0.5)) 
 #+ 
 #  scale_color_grey()
-ggsave("Figure8.jpeg", width = 7.65, height = 5.56)
+ggsave("Figure8.pdf", width = 7.65, height = 5.56)
 
 
