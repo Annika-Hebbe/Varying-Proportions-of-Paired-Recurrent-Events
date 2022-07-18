@@ -20,12 +20,12 @@ This R code takes the four saved output files and saves them into one large file
 This R code take the large saved model output and summarized it by taking the mean value to concisely summarize each model by pair percentage. 
 
 **Tables.R**  
-This R code takes the saved summariezed model output and produces the 14 plots found in the paper. This code does not include table 3 in the paper: the results from the CHCO dataset.
+This R code takes the saved summarized model output and produces the 14 plots found in the paper. This code does not include table 3 in the paper: the results from the CHCO dataset.
 
 **Plots.R**  
-This R code takes the saved summariezed model output and produces the 8 plots found in the paper.
+This R code takes the saved summarized model output and produces the 8 plots found in the paper.
 
-## Softwear Requirments
+## Software Requirements
 
 R version 3.6.2. was used 
 
